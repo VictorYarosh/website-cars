@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1230px;
     padding: 80px 15px;
-    margin: 0 auto;
+    margin: -30px auto;
 }
 
 /* Intro */
@@ -202,7 +202,11 @@ h1, h2, h3, h4, h5, h6 {
     top: 25px;
     right: 100px;
     z-index: 1;
+    left: 600px;
 
+}
+.nav_toggle:focus {
+    outline: 0;
 }
 
 .nav_toggle_item {
@@ -684,6 +688,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews_item {
+    min-height: 210px;
     padding-left: 235px;
     position: relative;
 
@@ -723,9 +728,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: red;
 
 }
-.reviews_btn {
+.reviews_btn,
+.slick-arrow {
     font-size: 0;
     color: transparent;
+
+    background: none ;
+    border: 0;
 
     position:absolute;
     top: 50%;
@@ -743,12 +752,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.reviews_btn-prev {
+.reviews_btn-prev,
+.slick-prev  {
     left: 0;
     transform: rotate(-45deg);
 }
 
-.reviews_btn-next {
+.reviews_btn-next,
+.slick-next  {
     right: 0;
     transform: rotate(135deg);
 }
@@ -1185,6 +1196,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 88px;
     height: 90px;
+    object-fit: cover;
 }
 
 /* subscribe */
@@ -1237,6 +1249,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .subscribe_btn:hover {
     background-color: rgb(69, 168, 158);
+}
+/*thumb*/
+
+.thumb-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+}
+  .thumb-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
 }
 
 
@@ -1353,6 +1382,7 @@ h1, h2, h3, h4, h5, h6 {
     /* header*/
 
     .header {
+        max-width: 100%;
         padding: 35px 0px;
     }
 
@@ -1377,9 +1407,13 @@ h1, h2, h3, h4, h5, h6 {
         padding: 8px 20px;
 
     }
+    .nav.active {
+        display: block;
+    }
 
 
     .nav_toggle {
+        padding: 90px 0 ;  
         display: block;
 
     }
@@ -1481,6 +1515,8 @@ h1, h2, h3, h4, h5, h6 {
     .blog_item:last-child {
         margin-bottom: 0;
     }
+
+  
 }
 
 
