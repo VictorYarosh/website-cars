@@ -64,16 +64,4 @@ $(function() {
         $this.toggleClass("active");
 
     });
-   
-
-
-   
-    
-    
-    
-    
-
-
-
-
 });
