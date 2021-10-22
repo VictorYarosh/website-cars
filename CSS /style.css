@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    color: black
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 *:before,
@@ -44,6 +47,16 @@ h6 {
     max-width: 1230px;
     padding: 80px 15px;
     margin: -30px auto;
+}
+
+
+/*new */
+
+.container-card {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    padding: 0 0px;
 }
 
 
@@ -123,6 +136,7 @@ h6 {
     font-size: 30px;
     font-weight: 700;
     color: rgb(250, 244, 244);
+    cursor: pointer;
 }
 
 
@@ -249,10 +263,10 @@ h6 {
     display: inline-block;
     vertical-align: top;
     padding: 8px 30px;
-    border: 3px solid white;
+    border: 3px solid salmon;
     font-size: 14px;
     font-weight: 700;
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     transition: backround .1s linear, color .1s linear;
@@ -309,6 +323,41 @@ h6 {
 .slider_num {
     font-size: 24px;
     font-weight: 700;
+}
+
+
+/*new slider*/
+
+.slideCard {
+    height: 100vh;
+    border-radius: 40px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.slideCard h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.slideCard.active {
+    flex: 10;
+}
+
+.slideCard.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 

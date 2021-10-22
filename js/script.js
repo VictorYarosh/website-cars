@@ -65,3 +65,28 @@ $(function() {
 
     });
 });
+
+
+  
+
+function slidesPlagin (activeSlide) {
+    const slideCards = document.querySelectorAll('.slideCard')
+
+    slideCards[activeSlide].classList.add('active')
+
+    for (const slideCard of slideCards) {
+        slideCard.addEventListener('click', () => {
+        clearActiveClasses()
+
+        slideCard.classList.add('active')
+    })
+ }
+
+    function clearActiveClasses() {
+        slideCards.forEach((slideCard) =>{
+        slideCard.classList.remove('active')
+      })
+    }
+}
+
+slidesPlagin (2);
