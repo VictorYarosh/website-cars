@@ -7,6 +7,7 @@ body {
     color: black;
     justify-content: center;
     align-items: center;
+    background-color: #739fc547;
 }
 
 *:before,
@@ -103,7 +104,6 @@ h6 {
 
 .header {
     width: 100%;
-    padding-top: 30px;
     display: block;
     position: absolute;
     top: 0;
@@ -116,7 +116,6 @@ h6 {
     background-color: coral;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
     position: fixed;
-    top: -43px;
     left: 0;
     right: 0;
     transform: translate3d(0, 0, 0);
@@ -137,6 +136,7 @@ h6 {
     font-weight: 700;
     color: rgb(250, 244, 244);
     cursor: pointer;
+    padding-left: 15px;
 }
 
 
@@ -379,7 +379,7 @@ h6 {
     padding: 20px 110px;
     display: flex;
     position: relative;
-    background-color: gray;
+    background-color: coral;
 }
 
 .section_map {
@@ -437,6 +437,7 @@ h6 {
 }
 
 .cart_item {
+    height: 400px;
     width: 33.333333%;
     padding: 0 15px;
 }
@@ -464,6 +465,7 @@ h6 {
 }
 
 .cart_img img {
+    object-fit: cover;
     display: block;
     max-width: 100%;
     height: auto;
@@ -682,7 +684,7 @@ h6 {
     padding: 20px 110px;
     display: flex;
     position: relative;
-    background-color: gray;
+    background-color: coral;
 }
 
 .reviews_item {
@@ -800,6 +802,7 @@ h6 {
 }
 
 .logos_item {
+    width: 200px;
     padding: 0 15px;
 }
 
@@ -813,12 +816,15 @@ h6 {
 /*works*/
 
 .works {
+    justify-content: center;
     display: flex;
-    margin: -28px;
+    position: relative;
 }
 
 .works_col {
-    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .works_item {
@@ -935,7 +941,7 @@ h6 {
 .blog_item {
     width: 300%;
     max-width: 1200px;
-    margin: 0 auto 50px;
+    margin: 0 16px;
 }
 
 .blog_header {
@@ -1051,7 +1057,7 @@ h6 {
 
 .footer {
     padding-top: 65px;
-    background-color: white;
+    background-color: #d8e4ee;
 }
 
 .footer_inner {

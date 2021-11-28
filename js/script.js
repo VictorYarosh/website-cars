@@ -1,3 +1,4 @@
+
 $(function() {
 
     var header = $("#header"),
@@ -89,4 +90,7 @@ function slidesPlagin (activeSlide) {
     }
 }
 
+
 slidesPlagin (2);
+
+
