@@ -71,7 +71,7 @@ h6 {
     height: 100vh;
     min-height: 820px;
     position: relative;
-    background: url("../img/services/fon.png") center no-repeat;
+    background: url("../img/services/fon1.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -87,7 +87,7 @@ h6 {
     margin-bottom: 2px;
     font-family: 'Cousine', monospace;
     font-size: 50px;
-    color: coral;
+    color: rgb(109, 4, 4);
 }
 
 .intro_suptitle:after {
@@ -113,7 +113,7 @@ h6 {
 }
 
 .header.fixed {
-    background-color: coral;
+    background-color: rgb(109, 4, 4);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
     position: fixed;
     left: 0;
@@ -122,7 +122,7 @@ h6 {
 }
 
 .header.active {
-    background-color: coral;
+    background-color: rgb(109, 4, 4);
 }
 
 .header_inner {
@@ -153,7 +153,7 @@ h6 {
     vertical-align: top;
     margin: 0 10px;
     position: relative;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color .1s linear;
 }
@@ -263,7 +263,7 @@ h6 {
     display: inline-block;
     vertical-align: top;
     padding: 8px 30px;
-    border: 3px solid salmon;
+    border: 3px solid rgb(109, 4, 4);
     font-size: 14px;
     font-weight: 700;
     color: black;
@@ -379,7 +379,7 @@ h6 {
     padding: 20px 110px;
     display: flex;
     position: relative;
-    background-color: coral;
+    background-color: rgb(109, 4, 4);
 }
 
 .section_map {
@@ -444,7 +444,7 @@ h6 {
 
 .cart_inner {
     position: relative;
-    background-color: coral;
+    background-color: rgb(109, 4, 4);
 }
 
 .cart_inner:hover .cart_img {
@@ -511,7 +511,7 @@ h6 {
 /* statistics */
 
 .statistics {
-    background-color: coral;
+    background-color: rgb(109, 4, 4);
 }
 
 .stat {
@@ -684,7 +684,7 @@ h6 {
     padding: 20px 110px;
     display: flex;
     position: relative;
-    background-color: coral;
+    background-color: rgb(109, 4, 4);
 }
 
 .reviews_item {
@@ -810,6 +810,16 @@ h6 {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.logoss {
+    background-color: red;
+    color: red;
+}
+
+.logos_garage {
+    color: red;
+    background-color: red;
 }
 
 
